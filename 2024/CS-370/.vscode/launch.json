@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/willschmitz/github-projects/school-projects/2024/CS-370",
+      "program": "/Users/willschmitz/github-projects/school-projects/2024/CS-370/build/Debug/outDebug"
+    }
+  ]
+}
