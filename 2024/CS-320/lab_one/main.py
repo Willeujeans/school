@@ -5,6 +5,9 @@
 import math 
 
 # Subroutines if any, go here
+def is_trivial(pattern: tuple) -> bool:
+    return len(pattern) <= 2
+
 def split_in_half(pattern: list) -> list[list]:
     center = int(len(pattern)/2)
     left_side = pattern[:center]
@@ -40,8 +43,9 @@ def is_palindrome(pattern: list[list]) -> bool:
 
 # Fill in find_palindrome
 def find_palindrome(pattern) -> tuple | None:
-    if len(pattern) <= 2: # check for trivial solutions
+    if is_trivial(pattern):
         return None
+    
     list_pattern = list(pattern)
     list_split = split_in_half(list_pattern)
     lists_aligned = [list_split[0], reverse(list_split[1])]
@@ -68,6 +72,10 @@ def find_palindrome_test():
     print("TEST(6) ", (1,0,0,1) == find_palindrome((1,0,1,0,1)))
     print("TEST(7) ", (1,2,3,2,1) == find_palindrome((1,2,3,3,2,1)))
     print("TEST(8) ", (1,2,3,3,2,1) == find_palindrome((1,2,3,3,2,1,1)))
-    print("Palindrome: String Tests")
 
+    print("Palindrome: String Tests")
+    print("TEST(0) ", None == find_palindrome(("Hello, World!",)))
+    print("TEST(0) ", ("AB","AB") == find_palindrome(("AB","AB","AB")))
+    print("TEST(0) ", None == find_palindrome(("hey","hey")))
+    print("TEST(0) ", ("C","A","N","A","C") == find_palindrome(("C","A","N","N","A","C")))
 find_palindrome_test()
