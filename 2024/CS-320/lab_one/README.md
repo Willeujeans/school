@@ -78,3 +78,6 @@ remove B[1]
 1,1,1,1
 
 
+## Issues
+(1, 2, 3, 4, 2, 1), currently its returning None due to the fact its an even palindrome and 3 & 4 dont have neighbors. So in the case of evens with the only difference being the center we can remove the center element.
+
