@@ -1,7 +1,4 @@
 Write up
-
-Here's a clean, step-by-step guide for completing your CS 370 Operating Systems homework assignment involving dynamic memory allocation and prime number counting:
-
 Assignment Overview
 You need to create two C programs, Driver.c and Primes.c, for a memory allocation and prime number counting task. The Driver.c program will set up the environment and invoke functions in Primes.c. The Primes.c program will handle memory allocation, array population, prime counting, and ratio calculation. You will also test your programs with Valgrind to ensure there are no memory leaks.
 
@@ -9,13 +6,11 @@ Files to Create
 Driver.c
 
 Task:
-Read a seed value from command line arguments.
-Initialize the random number generator using the seed.
-Call the function from Primes.c to perform the required computations.
-Print the seed used, the number of iterations, the iteration with the maximum prime count, and the average prime/composite ratio.
-Functions to Implement:
-main: Handles command line input, initializes random number generation, and processes output.
-Primes.c
+- Read a seed value from command line arguments.
+- Initialize the random number generator using the seed.
+- Call the function from Primes.c to perform the required computations.
+- Print the seed used, the number of iterations, the iteration with the maximum prime count, and the average prime/composite ratio.
+- main: Handles command line input, initializes random number generation, and processes output.
 
 Task:
 Allocate and deallocate arrays of random sizes.
