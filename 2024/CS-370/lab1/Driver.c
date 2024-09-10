@@ -6,16 +6,15 @@ int main(int argc, char *argv[])
 {
     if (argc != 2)
     {
-        fprintf(stderr, "Usage: %s <seed>\n", argv[0]);
+        printf("[Driver]: Seed was not provided");
         return 1;
     }
 
     int seed = atoi(argv[1]);
     srand(seed);
-    printf("[Driver]: random with seed: %d\n", seed);
+    printf("[Driver]: With seed: %d\n", seed);
 
-    float avg_ratio = get_running_ratio();
-    printf("[Driver]: Average prime ratio: %.6f\n", avg_ratio);
-
+    float running_ratio = get_running_ratio();
+    // printf("[Driver]: Ratio of primes: %.6f\n", running_ratio);
     return 0;
 }

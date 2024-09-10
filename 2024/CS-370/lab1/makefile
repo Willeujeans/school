@@ -1,20 +1,16 @@
-CC = gcc
-CFLAGS = -Wall -Wextra -std=c99
-OBJ = Driver.o Primes.o
-
 all: Driver
 
-Driver: $(OBJ)
-	$(CC) $(CFLAGS) -o Driver $(OBJ)
+Driver: Driver.o Primes.o
+	gcc -Wall -Wextra -std=c99 -o Driver Driver.o Primes.o
 
 Driver.o: Driver.c Primes.h
-	$(CC) $(CFLAGS) -c Driver.c
+	gcc -Wall -Wextra -std=c99 -c Driver.c
 
 Primes.o: Primes.c Primes.h
-	$(CC) $(CFLAGS) -c Primes.c
+	gcc -Wall -Wextra -std=c99 -c Primes.c
 
 clean:
 	rm -f *.o Driver
 
 tar:
-	tar -cvf $(USER)-HW1.tar Driver.c Primes.c Primes.h Makefile README.txt
+	tar -cvf William-Schmitz-HW1.tar Driver.c Primes.c Primes.h Makefile README.txt
