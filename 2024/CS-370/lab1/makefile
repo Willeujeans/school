@@ -13,4 +13,5 @@ clean:
 	rm -f *.o Driver
 
 tar:
-	tar -cvf William-Schmitz-HW1.tar Driver.c Primes.c Primes.h Makefile README.txt
+	zip William-Schmitz-HW1.zip Driver.c Primes.c Primes.h Makefile README.txt
+

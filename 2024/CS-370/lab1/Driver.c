@@ -12,9 +12,9 @@ int main(int argc, char *argv[])
 
     int seed = atoi(argv[1]);
     srand(seed);
-    printf("[Driver]: With seed: %d\n", seed);
+    printf("[Driver]: Seeding RNG with seed: %d\n", seed);
 
     float running_ratio = get_running_ratio();
-    // printf("[Driver]: Ratio of primes: %.6f\n", running_ratio);
+    printf("[Driver]: AVG prime/composite ratio: %.6f\n", running_ratio);
     return 0;
 }

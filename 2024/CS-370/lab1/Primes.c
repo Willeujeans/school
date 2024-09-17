@@ -93,8 +93,8 @@ float get_running_ratio()
         free(array);
     }
 
-    printf("[Primes]: Number of iterations: %d\n", total_iterations);
-    printf("[Primes]: Max prime count: %d\n", max_count_iteration);
+    printf("[Primes]: Number of iterations is: %d\n", total_iterations);
+    printf("[Primes]: Iteration with MAX prime count: %d\n", max_count_iteration);
 
     if (total_iterations > 0)
     {
