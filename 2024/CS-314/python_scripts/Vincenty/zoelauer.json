@@ -1,0 +1,13 @@
+{
+ "requestType"	: "distances",
+ "places"		: [{"name": "New York, New York, USA", "latitude": "40.7306", "longitude": "-73.9352"},
+                   {"name": "La Plata, Argentina", "latitude": "-34.9203", "longitude": "-57.9696"},
+                   {"name": "Istanbul, Turkey", "latitude": "41.0151", "longitude": "28.9795"},
+                   {"name": "Queensland, New Zealand", "latitude": "-45.0312", "longitude": "168.6626"},
+                   {"name": "Daegu, South Korea", "latitude": "35.8501", "longitude": "128.5206"}
+                   ],
+   "earthRadius"	: 10500,
+   "formula"		: "vincenty",
+   "distances"		: [14123,20167,30517,5919,15447]
+   
+}

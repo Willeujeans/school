@@ -1,0 +1,296 @@
+[
+    {
+        "places": [
+            {
+                "name": "New York, New York, USA",
+                "latitude": "40.7306",
+                "longitude": "-73.9352"
+            },
+            {
+                "name": "La Plata, Argentina",
+                "latitude": "-34.9203",
+                "longitude": "-57.9696"
+            },
+            {
+                "name": "Istanbul, Turkey",
+                "latitude": "41.0151",
+                "longitude": "28.9795"
+            },
+            {
+                "name": "Queensland, New Zealand",
+                "latitude": "-45.0312",
+                "longitude": "168.6626"
+            },
+            {
+                "name": "Daegu, South Korea",
+                "latitude": "35.8501",
+                "longitude": "128.5206"
+            }
+        ],
+        "distances": [
+            14123,
+            20167,
+            30517,
+            5919,
+            15447
+        ]
+    },
+    {
+        "places": [
+            {
+                "name": "Los Angeles",
+                "latitude": "34.1",
+                "longitude": "-118.2"
+            },
+            {
+                "name": "Seoul",
+                "latitude": "37.5",
+                "longitude": "127.0"
+            },
+            {
+                "name": "Rio de Janeiro",
+                "latitude": "-22.9",
+                "longitude": "-43.2"
+            },
+            {
+                "name": "Sydney",
+                "latitude": "-33.9",
+                "longitude": "151.2"
+            }
+        ],
+        "distances": [
+            5820269,
+            10986777,
+            8199241,
+            7311673
+        ]
+    },
+    {
+        "places": [
+            {
+                "name": "place1",
+                "latitude": "1",
+                "longitude": "-179.9"
+            },
+            {
+                "name": "place2",
+                "latitude": "-89.9",
+                "longitude": "1"
+            },
+            {
+                "name": "place3",
+                "latitude": "-1",
+                "longitude": "179.9"
+            },
+            {
+                "name": "place4",
+                "latitude": "89.9",
+                "longitude": "-1"
+            }
+        ],
+        "distances": [
+            192726,
+            188495,
+            192726,
+            188491
+        ]
+    },
+    {
+        "places": [
+            {
+                "name": "Tokyo, Japan",
+                "latitude": "35.682839",
+                "longitude": "139.759455"
+            },
+            {
+                "name": "New York, USA",
+                "latitude": "40.712776",
+                "longitude": "-74.005974"
+            },
+            {
+                "name": "Sydney, Australia",
+                "latitude": "-33.868820",
+                "longitude": "151.209290"
+            },
+            {
+                "name": "Buenos Aires, Argentina",
+                "latitude": "-34.603722",
+                "longitude": "-58.381592"
+            }
+        ],
+        "distances": [
+            8512,
+            12548,
+            9262,
+            14412
+        ]
+    },
+    {
+        "places": [
+            {
+                "name": "Eiffel Tower",
+                "latitude": "48.8584",
+                "longitude": "2.2945"
+            },
+            {
+                "name": "Sydney Opera House",
+                "latitude": "-33.8568",
+                "longitude": "151.2153"
+            },
+            {
+                "name": "Statue of Liberty",
+                "latitude": "40.6892",
+                "longitude": "-74.0445"
+            },
+            {
+                "name": "Christ the Redeemer",
+                "latitude": "-22.9519",
+                "longitude": "-43.2105"
+            }
+        ],
+        "distances": [
+            12300,
+            15500,
+            8200,
+            9900
+        ]
+    },
+    {
+        "places": [
+            {
+                "name": "Chicago",
+                "latitude": "41.88",
+                "longitude": "-87.63"
+            },
+            {
+                "name": "Berlin",
+                "latitude": "52.52",
+                "longitude": "13.41"
+            },
+            {
+                "name": "Buenos Aires",
+                "latitude": "-34.60",
+                "longitude": "-58.38"
+            },
+            {
+                "name": "Tokyo",
+                "latitude": "35.69",
+                "longitude": "139.69"
+            },
+            {
+                "name": "Equator",
+                "latitude": "0.0",
+                "longitude": "139.69"
+            },
+            {
+                "name": "Prime Meridian",
+                "latitude": "51.51",
+                "longitude": "0.0"
+            }
+        ],
+        "distances": [
+            8481,
+            12108,
+            18532,
+            1854,
+            11434,
+            8476
+        ]
+    },
+    {
+        "places": [
+            {
+                "name": "place1",
+                "latitude": "0",
+                "longitude": "0"
+            },
+            {
+                "name": "place2",
+                "latitude": "0",
+                "longitude": "180"
+            },
+            {
+                "name": "place3",
+                "latitude": "90",
+                "longitude": "0"
+            },
+            {
+                "name": "place4",
+                "latitude": "90",
+                "longitude": "10.3"
+            },
+            {
+                "name": "place5",
+                "latitude": "-9.54407",
+                "longitude": "147.42805"
+            }
+        ],
+        "distances": [
+            31416,
+            15708,
+            0,
+            17374,
+            25518
+        ]
+    },
+    {
+        "places": [
+            {
+                "name": "Null Island",
+                "latitude": "0.0",
+                "longitude": "0.0"
+            },
+            {
+                "name": "North Pole",
+                "latitude": "90.0",
+                "longitude": "0.0"
+            },
+            {
+                "name": "South Pole",
+                "latitude": "-90.0",
+                "longitude": "0.0"
+            },
+            {
+                "name": "Pacific Ocean",
+                "latitude": "-0.0",
+                "longitude": "180.0"
+            },
+            {
+                "name": "Pacific Ocean",
+                "latitude": "0.0",
+                "longitude": "-180.0"
+            },
+            {
+                "name": "Russia",
+                "latitude": "45.0",
+                "longitude": "45.0"
+            },
+            {
+                "name": "North Atlantic Ocean",
+                "latitude": "45.0",
+                "longitude": "-45.0"
+            },
+            {
+                "name": "South Atlantic Ocean",
+                "latitude": "-45.0",
+                "longitude": "-45.0"
+            },
+            {
+                "name": "Indian Ocean",
+                "latitude": "-45.0",
+                "longitude": "45.0"
+            }
+        ],
+        "distances": [
+            49250270,
+            197001082,
+            98500541,
+            0,
+            131334054,
+            65667027,
+            29074132,
+            65667027,
+            76975729
+        ]
+    }
+]

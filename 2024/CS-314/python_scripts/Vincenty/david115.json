@@ -1,0 +1,12 @@
+{
+    "requestType": "distances",
+    "places": [
+        {"name": "Tokyo, Japan", "latitude": "35.682839", "longitude": "139.759455"},
+        {"name": "New York, USA", "latitude": "40.712776", "longitude": "-74.005974"},
+        {"name": "Sydney, Australia", "latitude": "-33.868820", "longitude": "151.209290"},
+        {"name": "Buenos Aires, Argentina", "latitude": "-34.603722", "longitude": "-58.381592"}
+    ],
+    "earthRadius": 5000,
+    "formula": "vincenty",
+    "distances": [8512, 12548, 9262, 14412]
+}

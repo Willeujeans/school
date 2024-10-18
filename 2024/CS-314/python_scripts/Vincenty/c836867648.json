@@ -1,0 +1,15 @@
+{
+    "requestType"    : "distances",
+    "places"         : [{"name":"Null Island", "latitude":  "0.0",  "longitude": "0.0"},
+                        {"name": "North Pole", "latitude":  "90.0", "longitude": "0.0"},
+                        {"name": "South Pole", "latitude":  "-90.0", "longitude": "0.0"},
+                        {"name": "Pacific Ocean", "latitude":  "-0.0", "longitude": "180.0"},
+                        {"name": "Pacific Ocean", "latitude":  "0.0", "longitude": "-180.0"},
+                        {"name": "Russia", "latitude":  "45.0", "longitude": "45.0"},
+                        {"name": "North Atlantic Ocean", "latitude":  "45.0", "longitude": "-45.0"},
+                        {"name": "South Atlantic Ocean", "latitude":  "-45.0", "longitude": "-45.0"},
+                        {"name": "Indian Ocean", "latitude":  "-45.0", "longitude": "45.0"}],
+    "earthRadius"     : 62707392,
+    "formula"         : "vincenty",
+    "distances"       : [49250270, 197001082, 98500541, 0, 131334054, 65667027, 29074132, 65667027, 76975729]
+  }

@@ -1,0 +1,11 @@
+{
+    "requestType"   : "distances",
+    "places"        : [{"name": "place1", "latitude":  "0",  "longitude": "0"},
+                       {"name": "place2", "latitude":  "0", "longitude": "180"},
+                       {"name": "place3", "latitude":  "90", "longitude": "0"},
+                       {"name": "place4", "latitude":  "90", "longitude": "10.3"},
+                       {"name": "place5", "latitude":  "-9.54407", "longitude": "147.42805"}],
+    "earthRadius"   : 10000,
+    "formula"       : "vincenty",
+    "distances"     : [31416, 15708, 0, 17374, 25518]
+  }

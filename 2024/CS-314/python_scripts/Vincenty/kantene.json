@@ -1,0 +1,14 @@
+{
+  "requestType": "distances",
+  "places": [
+    {"name": "Chicago", "latitude": "41.88", "longitude": "-87.63"},
+    {"name": "Berlin", "latitude": "52.52", "longitude": "13.41"},
+    {"name": "Buenos Aires", "latitude": "-34.60", "longitude": "-58.38"},
+    {"name": "Tokyo", "latitude": "35.69", "longitude": "139.69"},
+    {"name": "Equator", "latitude": "0.0", "longitude": "139.69"},
+    {"name": "Prime Meridian", "latitude": "51.51", "longitude": "0.0"}
+  ],
+  "earthRadius": 6500.0,
+  "formula": "vincenty",
+  "distances": [8481, 12108, 18532, 1854, 11434, 8476]
+}

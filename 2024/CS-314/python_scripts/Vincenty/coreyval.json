@@ -1,0 +1,11 @@
+{
+    "requestType"    : "distances",
+    "places"         : [{ "name": "Eiffel Tower", "latitude": "48.8584", "longitude": "2.2945" },
+                        { "name": "Sydney Opera House", "latitude": "-33.8568", "longitude": "151.2153" },
+                        { "name": "Statue of Liberty", "latitude": "40.6892", "longitude": "-74.0445" },
+                        { "name": "Christ the Redeemer", "latitude": "-22.9519", "longitude": "-43.2105" }],
+    "earthRadius"    : 6500.0,
+    "formula"        : "vincenty",
+    "distances"      : [12300, 15500, 8200, 9900]
+  }
+  
