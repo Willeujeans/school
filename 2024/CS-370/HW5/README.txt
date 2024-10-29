@@ -1,0 +1,3 @@
+You will be writing a Java program  that will create a multi-threaded virtual network simulation that creates a network of N Nodes each with K neighbors. Nodes will use Java concurrency mechanisms to produce and consume Messages.
+
+The program must be in Java. You must supply a zip file: Lastname-Firstname-HW5.zip containing the fully implemented .java files, the .jar file that will be used to run the program, and a README.txt file explaining your code. Java files must be located in a package called src. The compiled program will be testing using command-line execution.
