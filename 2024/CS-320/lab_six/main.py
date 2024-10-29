@@ -1,30 +1,30 @@
-import edgegraph
+from edgegraph import GraphEL, VertexEL
 
 
-def dfs(graph: edgegraph.GraphEL, start: edgegraph.VertexEL):
-    """
-    useful methods in GraphEL:
-        .vertices() : gives all vertices within graph
-        .edges() : gives all edges within graph
-        .incident(v) : gives a list of all the edges this vertex is contained within
-        .adjacent_vertices(v) : gives a list of all verticies that are connected to this vertex
-    """
-    # Input validation
+def is_valid_input(graph: GraphEL, start: VertexEL) -> bool:
     if graph is None or start is None:
-        return ()
+        return False
     if start not in graph.vertices():
+        return False
+    return True
+
+
+def dfs(graph: GraphEL, start: VertexEL) -> tuple:
+    if not is_valid_input(graph, start):
         return ()
+    
+    dfs_path: list[VertexEL] = []
+    visited_vertices: set[str] = set()
+    stack: list[VertexEL] = [start]
 
-    # Using a stack approach, add the first Vertex
-    depth_first_search_vertices = []
-    stack = []
-    stack.append(start)
-
-    # Loop to search through graph
-    while len(stack) > 0:
-        # removing the parent node will allow us to access the children nodes
-        top_item: edgegraph.VertexEL = stack.pop()
-        depth_first_search_vertices.append(top_item)
-        stack = stack + graph.adjacent_vertices(v=top_item)
-
-    return tuple(depth_first_search_vertices)
+    while stack:
+        current_vertex: VertexEL = stack.pop()
+        
+        for neighbor in graph.adjacent_vertices(current_vertex):
+            if neighbor.name not in visited_vertices:
+                stack.append(neighbor)
+        
+        if current_vertex.name not in visited_vertices:
+            dfs_path.append(current_vertex)
+            visited_vertices.add(current_vertex.name)
+    return tuple(dfs_path)
