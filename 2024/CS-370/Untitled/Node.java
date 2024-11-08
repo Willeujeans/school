@@ -1,9 +1,8 @@
 package src;
-
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicLong;
 
-public class Node extends Thread {
+public class Node extends Thread{
     private String nodeid;
     private Random rng;
     private volatile boolean done;
@@ -19,7 +18,7 @@ public class Node extends Thread {
     private AtomicLong sumOfMessagesSent;
     private AtomicLong sumOfMessagesReceived;
 
-    public Node(String ID, Long seed, Long messagesToSend, int K, int bufferSize) {
+    public Node(String ID, Long seed, Long messagesToSend, int K, int bufferSize){
         this.nodeid = ID;
         this.rng = new Random(seed + Long.parseLong(ID));
         this.done = false;
@@ -34,56 +33,55 @@ public class Node extends Thread {
         this.qtyMessagesToSend = messagesToSend;
         this.producers = new Producer[K];
         this.consumers = new Consumer[K];
-        for (int i = 0; i < K; i++) {
-            System.out.println("");
-            this.producers[i] = new Producer(this, this.qtyMessagesToSend / K);
+        for(int i = 0; i < K; i++){
+            this.producers[i] = new Producer(this, this.qtyMessagesToSend/K);
             this.consumers[i] = new Consumer(this);
         }
         // each producer will create (messagesToSend)/Number of Nodes * K
     }
 
-    public String getNodeID() {
+    public String getNodeID(){
         return this.nodeid;
     }
 
-    public void setNeighbors(Node[] neighbors) {
+    public void setNeighbors(Node[] neighbors){
         this.neighbors = neighbors;
     }
 
-    public Long generateMessage() {
+    public Long generateMessage(){
         return Math.abs(rng.nextLong() % 1024);
     }
-
-    public Node selectDestination(int messageValue) {
+    
+    public Node selectDestination(int messageValue){
         return neighbors[messageValue % neighbors.length];
     }
 
-    public void updateSentMessages(Message message) {
+    public void updateSentMessages(Message message){
         sumOfMessagesSent.addAndGet(message.messageValue);
         totalMessagesSent.incrementAndGet();
     }
 
-    public void updateReceivedMessages(Message message) {
+    public void updateReceivedMessages(Message message){
         sumOfMessagesReceived.addAndGet(message.messageValue);
         totalMessagesReceived.incrementAndGet();
     }
 
-    public Long reportTotalSent() {
+    public Long reportTotalSent(){
         System.out.println("Total Sent: " + this.totalMessagesSent.get());
         return this.totalMessagesSent.get();
     }
 
-    public Long reportTotalReceived() {
+    public Long reportTotalReceived(){
         System.out.println("Total Received: " + this.totalMessagesReceived.get());
         return this.totalMessagesReceived.get();
     }
 
-    public Long reportSumSent() {
+    public Long reportSumSent(){
         System.out.println("Sum Sent: " + this.sumOfMessagesSent.get());
         return this.sumOfMessagesSent.get();
     }
 
-    public Long reportSumReceived() {
+    public Long reportSumReceived(){
         System.out.println("Sum Received: " + this.sumOfMessagesReceived.get());
         return this.sumOfMessagesReceived.get();
     }
@@ -94,8 +92,8 @@ public class Node extends Thread {
     }
 
     @Override
-    public void run() {
-        for (int i = 0; i < this.producers.length; i++) {
+    public void run(){
+        for(int i = 0; i < this.producers.length; i++){
             this.producers[i].start();
             try {
                 this.producers[i].join();
@@ -108,9 +106,8 @@ public class Node extends Thread {
             } catch (Exception e) {
             }
         }
-        while (!this.done) {
+        while(!this.done){
             checkDone();
         }
-        System.out.println("🟠 Node[" + this.getNodeID() + "] completed");
     }
 }

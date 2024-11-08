@@ -1,5 +1,12 @@
-66.1 A Genetic Algorithm for the Traveling Salesperson Problem
-In this lab, you are tasked with writing the critical portions of a genetic algorithm to solve the traveling salesperson problem (TSP). Specifically you will write a routine ga_tsp(initial_population, distances, generations) which is given an initial population of valid Hamiltonian paths (initial_population, which is a list of paths [tuples]), a dictionary of distances (distances), and the number of generations (generations) that your algorithm should run. After completing the requisite number of generations, ga_tsp() should return the best path (a tuple of cities) from the final generation.
+Traveling Salesperson Problem: Using a genetic algorithm
+---
+_In this lab, you are tasked with writing the critical portions of a genetic algorithm to solve the traveling salesperson problem (TSP)._
+Specifically you will write a
+routine ga_tsp(initial_population, distances, generations) which is given an initial population of valid Hamiltonian paths
+(initial_population, which is a list of paths [tuples])
+(distances): Dictionary of distances 
+Number of generations (generations) that your algorithm should run.
+ga_tsp() should return the best path (a tuple of cities) from the final generation, after completing the requisite number of generations.
 
 Note that a generation is defined as a single iteration of the algorithm (parent selection, crossover, selection of the fittest population) using a steady population across generations (the same number of children as there are parents). If you use a variation of the above approach, such as creating half the number of children compared to the population size, you'll need to perform twice the number of iterations (generations).
 

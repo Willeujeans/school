@@ -5,7 +5,7 @@ from util import cost, best_path
 # from init_pop import init_lousy as init_pop
 from init_pop import init_pop
 from load_dist import load_dist
-from main import ga_tsp
+from ga_tsp import ga_tsp
 
 
 GENERATIONS = 500
