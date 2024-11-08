@@ -111,6 +111,5 @@ public class Node extends Thread {
         while (!this.done) {
             checkDone();
         }
-        System.out.println("🟠 Node[" + this.getNodeID() + "] completed");
     }
 }

@@ -13,7 +13,7 @@ public class Producer extends Thread {
         String sourceID = src.getNodeID();
         Long randomMessageValue = this.src.generateMessage();
         int randomMessageValueInt = randomMessageValue.intValue();
-        String destinationID = this.src.selectDestination(randomMessageValueInt).getNodeID(); 
+        String destinationID = this.src.selectDestination(randomMessageValueInt).getNodeID();
         return new Message(sourceID, destinationID, randomMessageValue);
     }
 
@@ -27,13 +27,13 @@ public class Producer extends Thread {
     }
 
     private void logOutput(Message message) {
-        System.out.println("Node " + src.getNodeID() + ": " + message.messageValue + " sent to Node " + message.destinationID);
+        System.out.println(
+                "Node " + src.getNodeID() + ": " + message.messageValue + " sent to Node " + message.destinationID);
     }
 
     @Override
     public void run() {
         for (long i = 0; i < this.numberOfMessages; i++) {
-            System.out.println("🍲:" + src.getNodeID());
             Message sentMessage = sendMessage(this.src, produceMessage());
             logOutput(sentMessage);
         }

@@ -17,14 +17,14 @@ public class Consumer extends Thread {
 
     private void logInput(Message message) {
         if (message != null) {
-            System.out.println("Node " + message.destinationID + ": Received " + message.messageValue + " from " + message.sourceID + ".");
+            System.out.println("Node " + message.destinationID + ": Received " + message.messageValue + " from "
+                    + message.sourceID + ".");
         }
     }
 
     @Override
     public void run() {
-        for(int i = 0; i < 50; i++){
-            System.out.println("👄: " + src.getNodeID());
+        for (int i = 0; i < 50; i++) {
             Message consumedMessage = consumeMessage();
             src.updateReceivedMessages(consumedMessage);
             logInput(consumedMessage);

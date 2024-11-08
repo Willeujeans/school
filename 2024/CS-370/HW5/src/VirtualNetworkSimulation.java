@@ -32,8 +32,6 @@ public class VirtualNetworkSimulation {
             int K = Integer.parseInt(args[2]);
             int B = Integer.parseInt(args[3]);
             Long M = Long.parseLong(args[4]);
-            // seed, N: number of nodes, K: number of neighbors, B: size of buffer, M:
-            // number of messages
             VirtualNetworkSimulation simulation = new VirtualNetworkSimulation(seed, N, K, B, M);
             simulation.startSimulation();
         } else {
@@ -66,9 +64,7 @@ public class VirtualNetworkSimulation {
     }
 
     public void startSimulation() {
-        System.out.println("Simulation Started.");
         for (Node node : this.threadPoolOfNodes) {
-            System.out.println("MAIN🧵: 🟢 Node [" + node.getNodeID() + "] created!");
             node.start();
         }
 
@@ -83,7 +79,6 @@ public class VirtualNetworkSimulation {
         boolean allDone = false;
         while (!allDone) {
             allDone = true;
-            System.out.println("MAIN🧵:" + Thread.currentThread() + " are all nodes done?");
             for (Node node : this.threadPoolOfNodes) {
                 if (!node.checkDone()) {
                     allDone = false;
